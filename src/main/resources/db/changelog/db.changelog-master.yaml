@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-core-schema
+      author: codex
+      changes:
+        - sqlFile:
+            path: db/changelog/changes/001-create-core-schema.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            stripComments: false
+  - changeSet:
+      id: 002-seed-roles
+      author: codex
+      changes:
+        - sqlFile:
+            path: db/changelog/changes/002-seed-roles.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            stripComments: false
